@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion">
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -95,7 +95,7 @@
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -217,6 +217,108 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/05/15/private-key-production-public-key/" itemprop="url">
+                  通过ssh-keygen与私钥生成公钥
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-15T21:53:21+08:00" content="2016-05-15">
+              2016-05-15
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/15/private-key-production-public-key/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/15/private-key-production-public-key/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>如果你的ssh的公钥不幸丢失，你不需要重新生成新的密钥对，通过ssh-keygen命令和私钥就可以。</p>
+<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -y -f ~/.ssh/id_rsa &gt; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -363,7 +465,7 @@
               
                 
                 <a class="post-title-link" href="/2016/04/06/supervisorctl-9001-refused-connection/" itemprop="url">
-                  Supervisorctl localhost:9001 refused connection解决方法
+                  Supervisorctl localhost:9001 无法连接
                 </a>
               
             
@@ -487,7 +589,7 @@
               
                 
                 <a class="post-title-link" href="/2016/03/21/docker-summary/" itemprop="url">
-                  Docker一些技巧总结
+                  Docker命令总结
                 </a>
               
             
@@ -537,7 +639,7 @@
       
         
           
-            <h3 id="批量删除-lt-none-gt-lt-none-gt-镜像"><a href="#批量删除-lt-none-gt-lt-none-gt-镜像" class="headerlink" title="批量删除&lt;none&gt;:&lt;none&gt;镜像"></a>批量删除<code>&lt;none&gt;:&lt;none&gt;</code>镜像</h3><blockquote>
+            <h3 id="批量删除none-none镜像"><a href="#批量删除none-none镜像" class="headerlink" title="批量删除none:none镜像"></a>批量删除none:none镜像</h3><blockquote>
 <p>docker rmi $(docker images -f “dangling=true” -q) </p>
 </blockquote>
 <p>如果需要<strong>root</strong>权限，两个<strong>docker</strong>前加上<strong>sudo</strong></p>
@@ -713,7 +815,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -723,7 +825,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -756,7 +858,7 @@
           <div class="links-of-blogroll motion-element">
             <div class="links-of-blogroll-title">
               <i class="fa fa-globe fa-fw"></i>
-              友情链接
+              Links
             </div>
             <ul class="links-of-blogroll-list">
               
@@ -803,7 +905,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 
@@ -868,6 +970,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
 
   
 
