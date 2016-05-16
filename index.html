@@ -639,9 +639,7 @@
       
         
           
-            <h3 id="批量删除none-none镜像"><a href="#批量删除none-none镜像" class="headerlink" title="批量删除none:none镜像"></a>批量删除none:none镜像</h3><blockquote>
-<p>docker rmi $(docker images -f “dangling=true” -q) </p>
-</blockquote>
+            <h3 id="批量删除none-none镜像"><a href="#批量删除none-none镜像" class="headerlink" title="批量删除none:none镜像"></a>批量删除none:none镜像</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rmi $(docker images -f &quot;dangling=true&quot; -q)</span><br></pre></td></tr></table></figure>
 <p>如果需要<strong>root</strong>权限，两个<strong>docker</strong>前加上<strong>sudo</strong></p>
 
           
